@@ -1,0 +1,95 @@
+name: Bug 反馈
+description: 报告 Keepbay 的 Bug 或异常行为
+labels: ["bug"]
+body:
+  - type: textarea
+    id: version
+    attributes:
+      label: 版本信息
+      description: 在「系统设置 › 关于」中点「复制版本信息」，粘贴到这里
+      placeholder: |
+        Keepbay 0.1.0-beta.3
+        系统：linux/amd64
+      render: text
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: 安装位置
+      options:
+        - Linux 服务器或小主机
+        - 群晖 NAS
+        - 威联通 NAS
+        - 其他 NAS（请在补充信息中说明）
+        - 其他（请在补充信息中说明）
+    validations:
+      required: true
+
+  - type: dropdown
+    id: where
+    attributes:
+      label: 出现问题的位置
+      options:
+        - 网页：登录后使用的页面
+        - 网页：访客打开的分享页
+        - 手机浏览器
+        - 命令行
+        - 安装、升级
+        - 其他（请在补充信息中说明）
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 简要描述遇到的问题
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 按顺序列出能复现问题的操作步骤
+      placeholder: |
+        1. 打开「xxx」页面
+        2. 点击「xxx」按钮
+        3. 出现错误
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望的结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际的结果
+      description: 实际出现的结果、错误提示的原文
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器（选填）
+      description: 网页上的问题请填写
+      placeholder: "如 Chrome 142、Safari 26、Edge 142"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 诊断信息、日志或截图（选填）
+      description: 诊断信息在「系统设置 › 维护」中生成，请保持「隐藏路径、文件名和网址」打开。不便公开的内容请发邮件到 support@huohuastudio.com，并在这里注明
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息（选填）

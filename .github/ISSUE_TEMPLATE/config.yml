@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使用文档
+    url: https://keepbay.app/docs/
+    about: 安装、设置和各项功能的说明
+  - name: 常见问题
+    url: https://keepbay.app/docs/faq
+    about: 提交前可以先查看是否已有答案

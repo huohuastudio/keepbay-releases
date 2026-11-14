@@ -1,0 +1,29 @@
+name: 问题咨询
+description: 使用中的疑问
+labels: ["question"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题
+      description: 详细描述您的疑问
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 已经查过的内容（选填）
+      description: 查阅过的文档页面、尝试过的办法
+
+  - type: textarea
+    id: version
+    attributes:
+      label: 版本信息（选填）
+      description: 在「系统设置 › 关于」中点「复制版本信息」，粘贴到这里
+      render: text
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息（选填）
