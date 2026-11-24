@@ -14,16 +14,10 @@
   </p>
 </div>
 
-<table>
-  <tr>
-    <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="screenshots/files-dark.webp" />
-        <img src="screenshots/files-light.webp" alt="Keepbay 的文件管理界面" />
-      </picture>
-    </td>
-  </tr>
-</table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="screenshots/files-window-dark.webp" />
+  <img src="screenshots/files-window-light.webp" alt="Keepbay 的文件管理界面" />
+</picture>
 
 > [!IMPORTANT]
 > Keepbay 目前处于内测阶段（1.0.0-beta），功能和界面还会调整。用于存放重要资料前，请先做好备份。
